@@ -10,7 +10,7 @@
     justify-content: start;
 }
 
-.sidebar > h4{
+.sidebar > h5{
     display: block;
     margin: 2px 30px;
     margin-bottom: 15px;
@@ -18,4 +18,9 @@
 
 .tab{
     margin: 10px 30px;
+}
+
+.board-btn{
+    margin: 10px 30px;
+    padding: 5px;
 }

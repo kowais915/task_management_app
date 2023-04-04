@@ -14,7 +14,7 @@ const Sidebar = () => {
 
     return ( 
         <div className="sidebar">
-            <h4>ALL   BOARDS</h4>
+            <h5>ALL BOARDS ({tabs.length})</h5>
 
             {tabs.map((tab) => {
                 return (
@@ -23,6 +23,8 @@ const Sidebar = () => {
                     </div>
                 )
             })}
+
+            <button className='board-btn'>+ Create New Board</button>
         </div>
      );
 }
