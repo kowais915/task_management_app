@@ -4,5 +4,14 @@ nav{
     height: 100px;
     background-color: #2B2C37;
     color: #fff;
-    padding: 40px;
+    
+}
+
+.brand{
+    border-right: 1px white solid;
+    padding: 30px 46.5px;
+}
+
+.links{
+    padding: 30px;
 }
