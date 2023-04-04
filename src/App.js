@@ -7,6 +7,7 @@ import {useState} from 'react';
 function App() {
   const [modal, setModal ] = useState(false); 
   const [taskModal, setTaskModal ] = useState(false);
+  const [columns, setColumns ] = useState(false);
 
 
 
@@ -17,6 +18,10 @@ function App() {
 
 const taskModalHandler = () => {
   setTaskModal(!taskModal);
+}
+
+const columnsHandler = () => {
+  setColumns(!columns);
 }
   return (
     
@@ -29,7 +34,7 @@ const taskModalHandler = () => {
     <div className="main_ui">
         <Sidebar modalHandler={modalHandler} modal={modal}/>
 
-        <BoardsArea/>
+        <BoardsArea columns={columns} columnsHandler = {columnsHandler} />
 
     </div>
     
