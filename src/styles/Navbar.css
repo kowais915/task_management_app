@@ -4,11 +4,12 @@ nav{
     height: 100px;
     background-color: #2B2C37;
     color: #fff;
+    border-bottom: 1px solid #4f5169;
     
 }
 
 .brand{
-    border-right: 1px white solid;
+    border-right: solid 1px #4f5169;
     padding: 30px 46.5px;
 }
 
