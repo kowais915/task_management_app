@@ -3,14 +3,23 @@ import {useState, useEffect } from 'react';
 
 // importing styles
 import '../styles/Sidebar.css'
+import Modal from './Modal';
 
 const Sidebar = () => {
+    const [modal, setModal ] = useState(false); 
+
+
     const [tabs, setTabs ] = useState([
         {title: "Platform Launch", id: 1},
         {title: "Product Launch", id: 2},
         {title: "Marketing", id: 3},
         {title: "Sales", id: 4},
     ]);
+
+    const modalHandler = () => {
+        setModal(!modal);
+    }
+
 
     return ( 
         <div className="sidebar">
@@ -24,7 +33,8 @@ const Sidebar = () => {
                 )
             })}
 
-            <button className='board-btn'>+ Create New Board</button>
+            {modal && <Modal modalHandler={modalHandler}/>}
+            <button onClick={modalHandler} className='board-btn'>+ Create New Board</button>
         </div>
      );
 }
