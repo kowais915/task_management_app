@@ -1,6 +1,7 @@
 import Navbar from './components/Navbar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
+import BoardsArea from './components/BoardsArea';
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
     <div className="main_ui">
         <Sidebar/>
 
+        <BoardsArea/>
+
     </div>
     
 
@@ -25,7 +28,7 @@ function App() {
             </Routes>
       
             </BrowserRouter>
-    <h1>Kanban Board App</h1>
+    
       
     </div>
 

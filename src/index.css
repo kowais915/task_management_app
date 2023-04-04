@@ -7,3 +7,7 @@
     box-sizing: border-box;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+.main_ui{
+    display: flex;
+}
