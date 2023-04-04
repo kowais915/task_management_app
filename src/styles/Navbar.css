@@ -1,7 +1,8 @@
 nav{
     display: flex;
     justify-content: space-between;
-    height: 70px;
+    height: 100px;
     background-color: #2B2C37;
     color: #fff;
+    padding: 40px;
 }
