@@ -16,3 +16,9 @@ nav{
 .links{
     padding: 30px;
 }
+
+.new-task-btn{
+    margin: -10px 30px;
+    padding: 10px;
+    border-radius: 40px;
+}

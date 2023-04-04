@@ -12,7 +12,7 @@ const Navbar = () => {
            </div>
             <div className="links">
                 <Link to="/">
-                    <button>+ Add New Task</button>
+                    <button className='new-task-btn'>+ Add New Task</button>
                 </Link>
                 
             </div>
