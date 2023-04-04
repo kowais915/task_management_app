@@ -1,0 +1,7 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    background-color: #2B2C37;
+    color: #fff;
+}
