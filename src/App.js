@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -9,6 +10,12 @@ function App() {
       
     <BrowserRouter>
     <Navbar />
+
+    <div className="main_ui">
+        <Sidebar/>
+
+    </div>
+    
 
           {/* routes */}
 

@@ -1,0 +1,8 @@
+.sidebar{
+    width: 300px;
+    height: 950px;
+    background-color:#2B2C37;
+    border-top: solid 1px white;
+    border-right: solid 1px white;
+    color: white;
+}
