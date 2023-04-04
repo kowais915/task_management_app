@@ -1,14 +1,14 @@
 import '../styles/Modal.css';
 
 
-const Modal = ({modalHandler}) => {
+const Modal = ({taskModalHandler}) => {
 
     return ( 
         <div className="backdrop">
             <div className="modal">
                 <form>
-                    <h1>This is the sidebar modal</h1>
-                    <button onClick={modalHandler}>Close</button>
+                    <h1>This is the task modal</h1>
+                    <button onClick={taskModalHandler}>Close</button>
                 </form>
             </div>
         </div>

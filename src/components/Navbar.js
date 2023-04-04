@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom';
 
 
+// importing components
+import TaskModal from './TaskModal';
+
 // import styles
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({taskModal, taskModalHandler}) => {
     return ( 
         <nav className="navbar">
            <div className="brand">
@@ -12,7 +15,8 @@ const Navbar = () => {
            </div>
             <div className="links">
                 <Link to="/">
-                    <button className='new-task-btn'>+ Add New Task</button>
+                    {taskModal && <TaskModal taskModalHandler = {taskModalHandler}/> }
+                    <button onClick={taskModalHandler} className='new-task-btn'>+ Add New Task</button>
                 </Link>
                 
             </div>

@@ -5,8 +5,8 @@ import {useState, useEffect } from 'react';
 import '../styles/Sidebar.css'
 import Modal from './Modal';
 
-const Sidebar = () => {
-    const [modal, setModal ] = useState(false); 
+const Sidebar = ({modalHandler, modal}) => {
+    
 
 
     const [tabs, setTabs ] = useState([
@@ -16,9 +16,7 @@ const Sidebar = () => {
         {title: "Sales", id: 4},
     ]);
 
-    const modalHandler = () => {
-        setModal(!modal);
-    }
+  
 
 
     return ( 
