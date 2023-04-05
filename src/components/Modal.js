@@ -13,7 +13,7 @@ const Modal = ({modalHandler}) => {
                     <h1>Add New Board</h1>
                     
                     <NewBoardForm />
-                    <button onClick={modalHandler}>Close</button>
+                    <button className='close-btn' onClick={modalHandler}>Create New Board</button>
                 </form>
             </div>
         </div>

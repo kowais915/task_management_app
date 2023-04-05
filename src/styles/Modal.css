@@ -9,13 +9,14 @@
 }
 
 .modal{
-    height: 700px;
+    
     width: 400px;
     background-color: #fff;
     margin: 150px auto;
     color: black;
-    padding: 20px;
+    padding: 30px;
     overflow: scroll;
+    height: 700px;
    
 
 }
@@ -33,7 +34,26 @@
 
 .nameInput, .columnsInput{
     width: 100%;
+    padding: 5px;
+    margin: 2px 0;
 }
 
 
 
+.addColumnBtn{
+   
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.close-btn{
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#root > div > div > div.sidebar > div.backdrop > div{
+    height: 400px;
+    padding: 30px;
+}

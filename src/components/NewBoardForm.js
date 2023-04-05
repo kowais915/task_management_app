@@ -27,7 +27,7 @@ const NewBoardForm = () => {
                 
             </label>
 
-            <div  className='addNewColumn'>
+            <label  className='addNewColumn'>
                 <span className='columns'>Columns</span>
                 {allColumns.map((column) => {
                     return (
@@ -39,7 +39,7 @@ const NewBoardForm = () => {
                         
                     )
                 })}
-            </div>
+            </label>
             <button onClick={e=>{
                 e.preventDefault();
                 addColumn();
