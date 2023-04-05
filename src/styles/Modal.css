@@ -19,8 +19,15 @@
 
 .name{
     display: block;
+
 }
+
+
 
 .columns{
     display: block;
+}
+
+.nameInput, .columnsInput{
+    width: 100%;
 }
