@@ -1,5 +1,8 @@
 import '../styles/Modal.css';
 
+// importing components
+import NewBoardForm from './NewBoardForm';
+
 
 const Modal = ({modalHandler}) => {
 
@@ -7,7 +10,9 @@ const Modal = ({modalHandler}) => {
         <div className="backdrop">
             <div className="modal">
                 <form>
-                    <h1>This is the sidebar modal</h1>
+                    <h1>Add New Board</h1>
+                    
+                    <NewBoardForm />
                     <button onClick={modalHandler}>Close</button>
                 </form>
             </div>
