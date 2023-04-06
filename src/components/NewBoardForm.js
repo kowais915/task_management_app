@@ -43,8 +43,8 @@ const NewBoardForm = ({setTabs, modalHandler, tabs}) => {
         <form className="boardForm" onSubmit={getData}>
             
             <label>
-                <span className='name'>Name</span>
-                <input className='nameInput' type="text"  />
+                <span className='name'> Board Name</span>
+                <input className='nameInput' type="text" />
 
                 
             </label>
