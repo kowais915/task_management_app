@@ -4,7 +4,7 @@ import '../styles/Modal.css';
 import NewBoardForm from './NewBoardForm';
 
 
-const Modal = ({modalHandler}) => {
+const NewBoardModal = ({modalHandler, setTabs}) => {
 
     return ( 
         <div className="backdrop">
@@ -12,12 +12,12 @@ const Modal = ({modalHandler}) => {
                 <form>
                     <h1>Add New Board</h1>
                     
-                    <NewBoardForm />
-                    <button className='close-btn' onClick={modalHandler}>Create New Board</button>
+                    <NewBoardForm setTabs={setTabs} modalHandler={modalHandler} />
+                   
                 </form>
             </div>
         </div>
      );
 }
  
-export default Modal;
+export default NewBoardModal;

@@ -1,7 +1,7 @@
 import '../styles/Modal.css';
 
 
-const Modal = ({taskModalHandler}) => {
+const TaskModal = ({taskModalHandler}) => {
 
     return ( 
         <div className="backdrop">
@@ -15,4 +15,4 @@ const Modal = ({taskModalHandler}) => {
      );
 }
  
-export default Modal;
+export default TaskModal;

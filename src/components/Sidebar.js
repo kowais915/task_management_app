@@ -3,7 +3,7 @@ import {useState, useEffect } from 'react';
 
 // importing styles
 import '../styles/Sidebar.css'
-import Modal from './Modal';
+import NewBoardModal from './NewBoardModal';
 
 const Sidebar = ({modalHandler, modal}) => {
     
@@ -31,7 +31,7 @@ const Sidebar = ({modalHandler, modal}) => {
                 )
             })}
 
-            {modal && <Modal modalHandler={modalHandler}/>}
+            {modal && <NewBoardModal modalHandler={modalHandler} setTabs={setTabs} tabs={tabs}/>}
             <button onClick={modalHandler} className='board-btn'>+ Create New Board</button>
         </div>
      );
