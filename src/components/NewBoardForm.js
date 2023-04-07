@@ -6,12 +6,10 @@ import '../styles/Modal.css';
 
 const NewBoardForm = ({setTabs, modalHandler, tabs}) => {
 
-    const [allColumns, setAllColumns] = useState([
-        
-        
-    ]);
+    const [allColumns, setAllColumns] = useState([]);
+    const [name, setName ] = useState('');
 
-   
+    
     
 
     const addColumn = () => {
@@ -44,7 +42,7 @@ const NewBoardForm = ({setTabs, modalHandler, tabs}) => {
             
             <label>
                 <span className='name'> Board Name</span>
-                <input className='nameInput' type="text" />
+                <input className='nameInput' type="text" onChange={e=>setName(e.target.value)}/>
 
                 
             </label>
