@@ -10,11 +10,15 @@ const Sidebar = ({modalHandler, modal}) => {
 
 
     const [tabs, setTabs ] = useState([
-        {title: "Platform Launch", id: 1},
-        {title: "Product Launch", id: 2},
-        {title: "Marketing", id: 3},
-        {title: "Sales", id: 4},
+        {title: "Platform Launch", id: 1}
     ]);
+
+
+    const handleTabs = (event )=>{
+        setTabs((prevTabs) => {
+            return [...prevTabs, event]
+        })
+    }
 
   
 
@@ -31,7 +35,7 @@ const Sidebar = ({modalHandler, modal}) => {
                 )
             })}
 
-            {modal && <NewBoardModal modalHandler={modalHandler} setTabs={setTabs} tabs={tabs}/>}
+            {modal && <NewBoardModal handleTabs = {handleTabs} modalHandler={modalHandler} setTabs={setTabs} tabs={tabs}/>}
             <button onClick={modalHandler} className='board-btn'>+ Create New Board</button>
         </div>
      );

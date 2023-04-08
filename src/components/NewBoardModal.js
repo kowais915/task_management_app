@@ -4,7 +4,7 @@ import '../styles/Modal.css';
 import NewBoardForm from './NewBoardForm';
 
 
-const NewBoardModal = ({modalHandler, setTabs}) => {
+const NewBoardModal = ({modalHandler, setTabs, handleTabs}) => {
 
     return ( 
         <div className="backdrop">
@@ -12,7 +12,7 @@ const NewBoardModal = ({modalHandler, setTabs}) => {
                 <form>
                     <h1>Add New Board</h1>
                     
-                    <NewBoardForm setTabs={setTabs} modalHandler={modalHandler} />
+                    <NewBoardForm handleTabs = {handleTabs} setTabs={setTabs} modalHandler={modalHandler} />
                    
                 </form>
             </div>
