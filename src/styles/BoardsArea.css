@@ -3,5 +3,10 @@
     width: 1054px;
     color: white;
     padding: 25px;
+    
 
+}
+
+.columns{
+    display: block;
 }

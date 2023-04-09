@@ -1,11 +1,14 @@
 import {useState, useEffect } from 'react';
 
+// importing components
+import BoardsArea from '../components/BoardsArea';
+
 
 // importing styles
 import '../styles/Sidebar.css'
 import NewBoardModal from './NewBoardModal';
 
-const Sidebar = ({modalHandler, modal}) => {
+const Sidebar = ({modalHandler, modal, handleBoardColumns}) => {
     
 
 
@@ -25,6 +28,9 @@ const Sidebar = ({modalHandler, modal}) => {
 
     return ( 
         <div className="sidebar">
+           
+            
+
             <h5>ALL BOARDS ({tabs.length})</h5>
 
             {tabs.map((tab) => {
@@ -35,7 +41,14 @@ const Sidebar = ({modalHandler, modal}) => {
                 )
             })}
 
-            {modal && <NewBoardModal handleTabs = {handleTabs} modalHandler={modalHandler} setTabs={setTabs} tabs={tabs}/>}
+            {modal && <NewBoardModal
+            
+                handleTabs = {handleTabs} 
+                modalHandler={modalHandler} 
+                setTabs={setTabs} 
+                tabs={tabs}
+                handleBoardColumns = {handleBoardColumns}    
+            />}
             <button onClick={modalHandler} className='board-btn'>+ Create New Board</button>
         </div>
      );

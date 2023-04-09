@@ -4,10 +4,10 @@ import {useState } from 'react';
 import '../styles/Modal.css';
 
 
-const NewBoardForm = ({setTabs, modalHandler, tabs, handleTabs }) => {
+const NewBoardForm = ({setTabs, modalHandler, tabs, handleTabs, handleBoardColumns }) => {
 
     const [allColumns, setAllColumns] = useState([]);
-    const [name, setName ] = useState('');
+    const [name, setName ] = useState([]);
     const [board, setBoard] = useState('');
 
 
@@ -16,12 +16,18 @@ const NewBoardForm = ({setTabs, modalHandler, tabs, handleTabs }) => {
     
 
     // the function that adds column inside the sidebar form
-    const addColumn = () => {
-        setAllColumns([...allColumns, <input className='columnsInput' onChange={(e)=>setName(e.target.value)} type="text"  />])
+    const addColumn = (event) => {
+        setAllColumns([...allColumns, <input className='columnsInput'  onChange={(e)=>{ setName(old=>{return [...old, e.target.value]})}} type="text"  />])
         console.log(name)
     }   
 
 
+
+    const formReset= () => {
+        setAllColumns([]);
+        setName([]);
+        setBoard('');
+    }
     // get the data from the form
 
     const getData = (event )=>{
@@ -33,6 +39,14 @@ const NewBoardForm = ({setTabs, modalHandler, tabs, handleTabs }) => {
         }
 
 
+        const boardColumns = {
+            title: name,
+            id: Math.floor(Math.random() * 1000) + 1,
+        }
+
+        console.log(name)
+
+        handleBoardColumns(boardColumns);
 
         console.log(board)
 
@@ -43,6 +57,7 @@ const NewBoardForm = ({setTabs, modalHandler, tabs, handleTabs }) => {
        
 
         modalHandler();
+        formReset();
     }
 
    

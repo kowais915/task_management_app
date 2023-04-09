@@ -8,10 +8,19 @@ function App() {
   const [modal, setModal ] = useState(false); 
   const [taskModal, setTaskModal ] = useState(false);
   const [columns, setColumns ] = useState(false);
+  const [boardColumns, setBoardColumns] = useState([]);
 
 
 
-  const modalHandler = () => {
+
+  // functions
+const handleBoardColumns = (event)=>{
+  setBoardColumns((prevBoardColumns) => {
+    return [...prevBoardColumns, event]
+  })
+}
+
+const modalHandler = () => {
     setModal(!modal);
 }
 
@@ -23,6 +32,10 @@ const taskModalHandler = () => {
 const columnsHandler = () => {
   setColumns(!columns);
 }
+
+
+
+
   return (
     
 
@@ -32,9 +45,9 @@ const columnsHandler = () => {
     <Navbar taskModal={taskModal} taskModalHandler={taskModalHandler} />
 
     <div className="main_ui">
-        <Sidebar modalHandler={modalHandler} modal={modal}/>
+        <Sidebar modalHandler={modalHandler} handleBoardColumns = {handleBoardColumns} modal={modal}/>
 
-        <BoardsArea columns={columns} columnsHandler = {columnsHandler} />
+        <BoardsArea boardColumns = {boardColumns} columns={columns} columnsHandler = {columnsHandler} />
 
     </div>
     
