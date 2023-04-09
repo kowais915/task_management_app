@@ -1,9 +1,11 @@
 .column{
     width: 290px;
     height: 800px;
-    background-color: #635FC7 ;
+    background-color: #2B2C37 ;
     margin: 5px;
     padding: 10px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 .addColumn{

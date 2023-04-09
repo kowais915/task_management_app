@@ -40,7 +40,7 @@ const [areaColumns, setAreaColumns] = useState([
             <div className="columnsArea">
                 {areaColumns.map((column) => {
                     return (
-                        <Column key={column.id} column={column}/>
+                        <Column title={column.title} key={column.id} column={column}/>
                     )
                 })}
             </div>

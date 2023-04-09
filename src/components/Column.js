@@ -2,10 +2,11 @@ import '../styles/Column.css'
 import { useState } from 'react';
 
 
+
 // importing components
 import Card from './Card';
 
-const Column = () => {
+const Column = ({title}) => {
     const [cards, setCards ] = useState([
         {id: 1, title: 'card 1', description: 'This is the card description', columnId: 1},
         {id: 2, title: 'card 2', description: 'This is the card description', columnId: 1},
@@ -17,7 +18,7 @@ const Column = () => {
 
     return ( 
         <div className="column">
-            <h4>This is the column</h4>
+            {title}
 
             {/* rendering cards */}
             {cards.map((card) => {

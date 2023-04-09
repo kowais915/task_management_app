@@ -1,12 +1,14 @@
 .boards_area{
     background-color: #20212C ;
-    width: 1054px;
+    width: auto;
     color: white;
     padding: 25px;
     display: flex;
     overflow: hidden;
     overflow-x: auto;
     white-space: nowrap;
+    
+    overflow-x: auto;
 
 }
 
@@ -20,8 +22,31 @@
 }
 
 .colModal{
-    background-color: blue;
-    width: 500px;
+    background-color: #2B2C37;
+    width: 1000px;
     height: 805px;
-    
+    border-radius: 10px;
 }
+
+
+
+/* WebKit-based browsers */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #2B2C37;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  
