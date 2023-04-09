@@ -5,8 +5,9 @@ import { useState } from 'react';
 
 // importing components
 import Card from './Card';
+import ColumnModal from './ColumnModal';
 
-const Column = ({title}) => {
+const Column = ({title, columns, columnsHandler}) => {
     const [cards, setCards ] = useState([
         {id: 1, title: 'card 1', description: 'This is the card description', columnId: 1},
         {id: 2, title: 'card 2', description: 'This is the card description', columnId: 1},
@@ -19,6 +20,8 @@ const Column = ({title}) => {
     return ( 
         <div className="column">
             {title}
+           
+
 
             {/* rendering cards */}
             {cards.map((card) => {

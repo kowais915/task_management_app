@@ -10,4 +10,10 @@
 
 .main_ui{
     display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow: hidden;
 }
+

@@ -9,6 +9,8 @@
     white-space: nowrap;
     
     overflow-x: auto;
+    flex-direction: column;
+    ;
 
 }
 
@@ -18,15 +20,20 @@
 
 .columnsArea{
     display: flex;
+    flex-direction: row;
 
 }
 
 .colModal{
-    background-color: #2B2C37;
-    width: 1000px;
-    height: 805px;
-    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
+.colModal > button{
+    padding: 10px;
+}
+
 
 
 
