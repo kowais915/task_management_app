@@ -15,9 +15,7 @@ const BoardsArea = ({columns, columnsHandler, boardColumns}) => {
 const [areaColumns, setAreaColumns] = useState([
     {id: 1, title: 'Todo', boardId: 1},
     {id: 2, title: 'In Progress', boardId: 1},
-    {id: 3, title: 'Done', boardId: 1},
-    {id: 4, title: 'Todo', boardId: 2},
-    {id: 5, title: 'In Progress', boardId: 2},
+    {id: 3, title: 'Done', boardId: 1}
 ])
 
     return ( 
